@@ -1,4 +1,4 @@
-package service;
+package structures;
 
 public class StudentService {
 

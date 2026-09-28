@@ -1,5 +1,7 @@
 package main;
 
+
+
 import model.Student;
 import structures.*;
 import java.util.Scanner;
