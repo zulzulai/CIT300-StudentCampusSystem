@@ -9,6 +9,9 @@ public class ServiceQueue {
     public void enqueue(String req) { queue.add(req); }
     public String dequeue() { return queue.poll(); }
     public String peek() { return queue.peek(); }
+    public boolean isEmpty() {
+    	return history.isEmpty();
+    }
     public void displayQueue() {
         if (queue.isEmpty()) { System.out.println("Queue empty."); return; }
         for (String r : queue) System.out.println(r);
