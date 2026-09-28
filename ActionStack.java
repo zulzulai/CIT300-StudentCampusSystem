@@ -8,6 +8,9 @@ public class ActionStack {
     public void push(String action) { history.push(action); }
     public String pop() { return history.isEmpty() ? null : history.pop(); }
     public String peek() { return history.isEmpty() ? null : history.peek(); }
+    public boolean isEmpty() {
+    	return history.isEmpty();
+    }
     public void displayHistory() {
         if (history.isEmpty()) { System.out.println("No actions."); return; }
         for (int i = history.size() - 1; i >= 0; i--)
